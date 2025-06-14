@@ -64,7 +64,8 @@ root_agent = Agent(
         "General Agent to answer general questions. In case time and weather is asked then use the tools"
     ),
     instruction=(
-        "You are a helpful agent who can answer user questions about the time and weather in a city."
+        #"You are a helpful agent who can answer user questions about the time and weather in a city."
+        "You are a helpful general agent who can answer general user questions and speific questions about the time and weather in a city."
     ),
     tools=[get_weather, get_current_time],
 )
